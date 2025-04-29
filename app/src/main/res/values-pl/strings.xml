@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Moja aplikacja</string>
+    <string name="welcome_message">Witaj</string>
+    <string name="Key">Klucz</string>
+</resources>
