@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -24,6 +25,9 @@ class MainActivity : AppCompatActivity() {
         val button1 = findViewById<Button>(R.id.button1)
         val button2 = findViewById<Button>(R.id.button2)
 
+        val button3 = findViewById<Button>(R.id.button3)
+        val intent = Intent(this, Second::class.java)
+
         button1.setOnClickListener{
             number++ //zwiększenie liczby o jeden
             textField.text = "$number" //zmiana na stringa i przypisujemy do pola text, który znajduje się w textField
@@ -32,6 +36,10 @@ class MainActivity : AppCompatActivity() {
         button2.setOnClickListener{
             number--
             textField.text = "$number"
+        }
+
+        button3.setOnClickListener{
+            startActivity(intent)
         }
     }
 }
